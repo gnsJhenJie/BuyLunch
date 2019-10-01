@@ -3,14 +3,13 @@
 //  FinalProject
 //
 //  Created by student on 2017/12/29.
-//  Copyright © 2017年 TNFSH104. All rights reserved.
+//  Copyright © 2017 TNFSH104. All rights reserved.
 //
 
 import UIKit
 
 class AdminFirstResponseVC: UIViewController {
     var userDefault = UserDefaults.standard
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,8 +48,6 @@ class AdminFirstResponseVC: UIViewController {
         StepperMeal3Outlet.value = userDefault.double(forKey: "Meal3Amount")
         StepperMeal4Outlet.value = userDefault.double(forKey: "Meal4Amount")
         StepperMeal5Outlet.value = userDefault.double(forKey: "Meal5Amount")
-
-    
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,7 +55,6 @@ class AdminFirstResponseVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
     var editable = false
     @IBOutlet weak var txtbPeopleAmount: UITextField!
     @IBOutlet weak var txtTotalMoney: UITextField!
@@ -81,7 +77,6 @@ class AdminFirstResponseVC: UIViewController {
             editable=false
             break
         default:
-            
             let Meal1Changed = StepperMeal1Outlet.value
             let Meal2Changed = StepperMeal1Outlet.value
             let Meal3Changed = StepperMeal1Outlet.value
@@ -117,8 +112,6 @@ class AdminFirstResponseVC: UIViewController {
     @IBAction func btnUpdate(_ sender: UIButton) {
         //It is NOT using now.
         //Add Alert window
-        
-        
     }
     @IBOutlet weak var txtMeal1Amount: UITextField!
     @IBOutlet weak var txtMeal2Amount: UITextField!
@@ -146,5 +139,4 @@ class AdminFirstResponseVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
