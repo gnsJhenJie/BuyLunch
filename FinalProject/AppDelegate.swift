@@ -3,7 +3,7 @@
 //  FinalProject
 //
 //  Created by student on 2017/12/8.
-//  Copyright © 2017年 TNFSH104. All rights reserved.
+//  Copyright © 2017 TNFSH104. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Wait 3.5 sec before enter LoginVC
@@ -43,9 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         userDefault.set("", forKey: "OrderDetails")
         
         userDefault.synchronize()
-        
-        
-        
+
         return true
     }
 
@@ -70,7 +67,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-
