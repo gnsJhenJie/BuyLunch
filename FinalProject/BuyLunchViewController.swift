@@ -3,7 +3,7 @@
 //  FinalProject
 //
 //  Created by student on 2017/12/8.
-//  Copyright © 2017年 TNFSH104. All rights reserved.
+//  Copyright © 2017 TNFSH104. All rights reserved.
 //
 
 import UIKit
@@ -22,7 +22,6 @@ class BuyLunchViewController: UIViewController {
         labMeal3Price.text = String(userDefault.double(forKey: "Meal3Price"))
         labMeal4Price.text = String(userDefault.double(forKey: "Meal4Price"))
         labMeal5Price.text = String(userDefault.double(forKey: "Meal5Price"))
-
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,12 +31,8 @@ class BuyLunchViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //NOT FINISHED
-        
     }
-    
 
-
-    
     @IBOutlet weak var labMeal1Name: UILabel!
     @IBOutlet weak var labMeal2Name: UILabel!
     @IBOutlet weak var labMeal3Name: UILabel!
@@ -48,7 +43,6 @@ class BuyLunchViewController: UIViewController {
     @IBOutlet weak var labMeal3Price: UILabel!
     @IBOutlet weak var labMeal4Price: UILabel!
     @IBOutlet weak var labMeal5Price: UILabel!
-    
 
     var NewMeal1Amount = 0.0
     @IBOutlet weak var labAmountMeal1: UILabel!
@@ -113,17 +107,9 @@ class BuyLunchViewController: UIViewController {
             //Add alert
         }
 
-        
-
         //userDefault.set(AddDetails, forKey: "OrderDetails")
         
         userDefault.synchronize()
         //After Clicking the btn,the VC will BACK TO LOGIN VC
     }
-    
-    
-    
-    
-    
 }
-
